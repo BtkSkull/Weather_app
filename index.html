@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Simple Weather App</h1>
+
+    <div class="controls">
+      <select id="city-select">
+        <option value="">-- Select a City --</option>
+        <option value="new york">New York</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="london">London</option>
+      </select>
+      <button id="get-weather-btn">Get Weather</button>
+    </div>
+
+    <div id="weather-display" class="hidden">
+      <h2 id="location"></h2>
+      <img id="weather-icon" alt="Weather Icon">
+
+      <p><strong>Main:</strong> <span id="weather-main">N/A</span></p>
+      <p><strong>Temperature:</strong> <span id="main-temperature">N/A</span> °C</p>
+      <p><strong>Feels Like:</strong> <span id="feels-like">N/A</span> °C</p>
+      <p><strong>Humidity:</strong> <span id="humidity">N/A</span>%</p>
+      <p><strong>Wind Speed:</strong> <span id="wind">N/A</span> m/s</p>
+      <p><strong>Wind Gust:</strong> <span id="wind-gust">N/A</span> m/s</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
